@@ -13,7 +13,7 @@ public class NumberToWord {
         int pos = reduced % 10;
 
         if (reduced < 10) {
-            word += units[pos];
+            word += units[reduced];
         } else if (reduced < 20) {
             word += doubles[pos];
         } else {
@@ -45,6 +45,7 @@ public class NumberToWord {
 
     public static void main(String[] args) {
 
+        System.out.println("        7: " + wordToNumberHundreds(7));
         System.out.println("       11: " + wordToNumberHundreds(11));
         System.out.println("      222: " + wordToNumberHundreds(222));
         System.out.println("     3333: " + wordToNumberHundreds(3333));
